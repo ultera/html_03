@@ -33,17 +33,17 @@ header p {
 }
 
 /* MAIN MENU */
-.main_menu {
+.main-menu {
   margin-bottom: 40px;
   background: #545454;
 }
-.main_menu ul {
+.main-menu ul {
   font-size: 0;
   line-height: 0;
   letter-spacing: -1px;
   text-shadow: 1px 1px 2px #282828;
 }
-.main_menu ul li {
+.main-menu ul li {
   display: inline-block;
   height: 40px;
   color: white;
@@ -51,20 +51,60 @@ header p {
   line-height: 40px;
   letter-spacing: normal;
 }
-.main_menu ul li:nth-child(1) {
+.main-menu ul li:nth-child(1) {
   padding: 0 65px 0 25px;
 }
-.main_menu ul li:nth-child(2) {
+.main-menu ul li:nth-child(1):hover {
+  width: 54px;
+  padding-left: 24px;
+  padding-right: 66px;
   border-left: 1px solid #999999;
   border-right: 1px solid #999999;
-  padding: 0 25px;
+  color: white;
+  cursor: pointer;
   background: #333333;
 }
-.main_menu ul li:nth-child(3) {
+
+.main-menu ul li:nth-child(2) {
+  padding: 0 25px;
+}
+.main-menu ul li:nth-child(2):hover {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  color: white;
+  cursor: pointer;
+  background: #333333;
+}
+.main-menu ul li:nth-child(3) {
   padding: 0 60px;
 }
-.main_menu ul li:nth-child(4) {
+.main-menu ul li:nth-child(3):hover {
+  padding-left: 59px;
+  padding-right: 59px;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  color: white;
+  cursor: pointer;
+  background: #333333;
+}
+.main-menu ul li:nth-child(4) {
   padding-left: 35px;
+  padding-right: 35px;
+}
+.main-menu ul li:nth-child(4):hover {
+  padding-left: 34px;
+  padding-right: 34px;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  color: white;
+  cursor: pointer;
+  background: #333333;
+}
+.main-menu li a {
+  color: white;
+  text-decoration: none;
 }
 
 /* ASIDE */
@@ -84,7 +124,13 @@ aside ul li {
   border-right: 1px solid #cccccc;
   line-height: 40px;
 }
-aside ul li:nth-child(3){
+aside li a {
+  color: #656363;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+aside ul li:hover {
   width: 208px;
   padding-left: 30px;
   color: #2c2c2c;
@@ -118,11 +164,12 @@ footer {
   margin-top: 80px;
   background: #e1e1e1;
 }
-footer ul {
+footer ul a {
   font-size: 0; /* убираем горизонтальные отступы */
   line-height: 0; /* ...и вертикальные в некоторых браузерах */
   font-size: 13px;
   color: #2c2c2c;
+  text-decoration: none;
   letter-spacing: -1px; /* переубеждаем webkit'ы */
 }
 footer ul li {
@@ -132,6 +179,6 @@ footer ul li {
   line-height: 40px;
   letter-spacing: normal;
 }
-footer ul li:nth-child(2) {
+footer ul li:hover {
   text-decoration: underline;
 }
